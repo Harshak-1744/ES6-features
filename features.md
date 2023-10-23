@@ -31,3 +31,120 @@ A concise syntax for expanding arrays or objects into individual elements, makin
 
 ## Iterators and Generators
 ES6 introduced the concept of iterable objects and generators, enabling more powerful and flexible control flow and iteration over data.
+
+
+### Examples 
+code snippets that demonstrate the features of ES6:
+
+1. Classes:
+```javascript
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+const person = new Person("John");
+person.sayHello(); // Output: Hello, my name is John.
+```
+
+2. Template Literals:
+```javascript
+const name = "Alice";
+const age = 28;
+console.log(`My name is ${name} and I am ${age} years old.`); // Output: My name is Alice and I am 28 years old.
+```
+
+3. Destructuring Assignment:
+```javascript
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+const { name, age, city } = person;
+console.log(name, age, city); // Output: John 30 New York
+```
+
+4. Enhanced Object Literals:
+```javascript
+const name = "Alice";
+const age = 28;
+
+const person = {
+  name,
+  age,
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+};
+
+person.sayHello(); // Output: Hello, my name is Alice.
+```
+
+5. Modules:
+```javascript
+// math.js
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+
+// main.js
+import { add, subtract } from './math.js';
+
+console.log(add(5, 3)); // Output: 8
+console.log(subtract(5, 3)); // Output: 2
+```
+
+6. Promises:
+```javascript
+const fetchData = () => {
+  return new Promise((resolve, reject) => {
+    // Simulating an asynchronous API request
+    setTimeout(() => {
+      const data = "Some data";
+      resolve(data);
+    }, 2000);
+  });
+};
+
+fetchData().then((data) => {
+  console.log(data); // Output: Some data
+});
+```
+
+7. Default Parameters:
+```javascript
+const greet = (name = "Guest") => {
+  console.log(`Hello, ${name}!`);
+};
+
+greet(); // Output: Hello, Guest!
+greet("Alice"); // Output: Hello, Alice!
+```
+
+8. Spread Operator:
+```javascript
+const numbers = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+
+console.log(sum(...numbers)); // Output: 6
+```
+
+9. Iterators and Generators:
+```javascript
+const myGenerator = function* () {
+  yield "Hello";
+  yield "World";
+};
+
+const generator = myGenerator();
+
+console.log(generator.next().value); // Output: Hello
+console.log(generator.next().value); // Output: World
+```
+
+
