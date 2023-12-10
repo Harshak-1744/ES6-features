@@ -3,7 +3,7 @@
 ES6, also known as ECMAScript 2015, introduced several new features and improvements to JavaScript. Below are some of the notable features:
 
 ## Arrow Functions
-A concise syntax for writing functions, using the "=>" symbol. This simplifies function expressions and ensures lexical scoping.
+The arrow function is a simple  way of writing functions, using the "=>" symbol. This simplifies function expressions and ensures lexical scoping.
 
 ## Classes
 ES6 introduced class syntax, providing a more familiar and structured way to create objects and define their behavior, similar to other object-oriented programming languages.
