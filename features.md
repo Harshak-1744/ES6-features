@@ -1,4 +1,4 @@
-# ES6 (ECMAScript 2015) Features
+# ES6 (ECMAScript 2015) Features 
 
 ES6, also known as ECMAScript 2015, introduced several new features and improvements to JavaScript. Below are some of the notable features:
 
