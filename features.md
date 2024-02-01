@@ -7,7 +7,7 @@ The arrow function is a simple  way of writing functions, using the "=>" symbol.
 
 ## Classes
 ES6 introduced class syntax, providing a more familiar and structured way to create objects and define their behavior, similar to other object-oriented programming languages.
-
+ 
 ## Template Literals
 Template literals allow for easier string interpolation and multiline strings, using backticks (`) instead of single or double quotes.
 
